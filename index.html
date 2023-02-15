@@ -22,19 +22,20 @@
     </div>
     <div class="container">
         <img class="dice__image--img" src="images/d6-1-icon.png"></img>
+        <p id="result"></p>
     </div>
     <div class="container">
       <p>Use the drop-down menu to change what dice you're rolling!</p>
     </div>
     <div class="container">
       <label for="select" id="dice__selector" name="select"></label>
-      <select name="dice-options" id="select">
-        <option value="4">4</option>
-        <option value="6">6</option>
-        <option value="8">8</option>
-        <option value="10">10</option>
-        <option value="12">12</option>
-        <option value="20">20</option>
+      <select name="dice-options" id="dice-type">
+        <option value="4">4-sided dice</option>
+        <option value="6">6-sided dice</option>
+        <option value="8">8-sided dice</option>
+        <option value="10">10-sided dice</option>
+        <option value="12">12-sided dice</option>
+        <option value="20">20-sided dice</option>
       </select>
 
       <button class="dice__button" id="roll" onclick="rollDice()">
