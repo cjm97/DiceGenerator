@@ -1,8 +1,0 @@
-function rollDice2(){
-  const diceType = document.getElementById("dice-type").value;
-  const diceValue = Math.floor((Math.random()*Number(diceType))+1);
-  const diceImageLink = `images/d${diceType}-${diceValue}-icon.png`;
-  diceImageLink.src = `images/d${diceType}-${diceValue}-icon.png`;
-
-  const resultElement = document.getElementById("result");
-}
