@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devsInc Dice Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>devsInc Dice Generator</h1>
+    </div>
+    <div class="container">
+      <div class="dice__header">
+        <h2>
+          Currently rolling a
+          <span class="dice" id="dice__number--header">D4</span>
+          <span class="dice new__dice" id="new__dice"></span> dice.
+        </h2>
+      </div>
+    </div>
+    <div class="container">
+        <img class="dice__image--img" src="images/d6-1-icon.png"></img>
+    </div>
+    <div class="container">
+      <p>Use the drop-down menu to change what dice you're rolling!</p>
+    </div>
+    <div class="container">
+      <label for="select" id="dice__selector" name="select"></label>
+      <select name="dice-options" id="select">
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8">8</option>
+        <option value="10">10</option>
+        <option value="12">12</option>
+        <option value="20">20</option>
+      </select>
+
+      <button class="dice__button" id="roll" onclick="rollDice()">
+        Press to roll!
+      </button>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
